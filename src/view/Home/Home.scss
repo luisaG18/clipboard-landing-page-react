@@ -1,0 +1,17 @@
+.container-header {
+  position: relative;
+  img:first-child {
+    width: 100%;
+  }
+  img:last-child {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+  }
+}
+
+.info-download {
+  display: flex;
+  flex-direction: column;
+}
