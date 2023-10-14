@@ -1,3 +1,7 @@
+body {
+  text-align: center;
+}
+
 .container-header {
   position: relative;
   img:first-child {
@@ -14,4 +18,5 @@
 .info-download {
   display: flex;
   flex-direction: column;
+  padding: 40px;
 }
