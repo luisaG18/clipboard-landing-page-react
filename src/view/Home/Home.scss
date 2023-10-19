@@ -1,3 +1,5 @@
+$desktop: 1000px;
+
 body {
   text-align: center;
   h1 {
@@ -5,6 +7,7 @@ body {
   }
   span {
     color: hsl(201, 11%, 66%);
+    max-width: 500px;
   }
 }
 
@@ -15,26 +18,37 @@ body {
     width: 100%;
   }
   img:nth-child(2) {
+    display: none;
+  }
+  img:nth-child(3) {
     position: absolute;
     right: 50%;
     bottom: 50%;
     transform: translate(50%, -50%);
   }
   &__container {
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
     top: 45%;
     padding: 0 40px 40px 40px;
+  }
+  &__container-buttoms {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 110px 40px 0 40px;
   &__img {
     padding: 50px 0;
+    max-width: 100%;
   }
   &__icon {
     padding: 30px 0;
@@ -43,6 +57,10 @@ body {
   }
   &__imgLogo {
     padding: 40px;
+  }
+  &__search {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -66,6 +84,50 @@ body {
     justify-content: center;
     img {
       width: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .section-initial {
+    img:first-child {
+      display: none;
+    }
+    img:nth-child(2) {
+      display: inline;
+      width: 100%;
+    }
+    /* &__container {
+      width: 100%;
+    } */
+    &__container-buttoms {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  .info {
+    &--search {
+      padding: 110px 0px 0 0px;
+    }
+    &__search {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      gap: 80px;
+      img {
+        transform: translateX(-4%);
+        flex-grow: 1;
+      }
+    }
+    &__list {
+      flex-grow: 1;
+      text-align: left;
+      padding-right: 40px;
+      span {
+        display: flex;
+        max-width: 400px;
+      }
     }
   }
 }

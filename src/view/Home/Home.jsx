@@ -1,6 +1,7 @@
 import "./Home.scss";
 import Logo from "../../assets/images/logo.svg";
-import ImageHeader from "../../assets/images/bg-header-mobile.png";
+import ImageHeaderMobile from "../../assets/images/bg-header-mobile.png";
+import ImageHeaderDesktop from "../../assets/images/bg-header-desktop.png";
 import ImageComputer from "../../assets/images/image-computer.png";
 import ImageDevices from "../../assets/images/image-devices.png";
 import IconBlacklist from "../../assets/images/icon-blacklist.svg";
@@ -21,7 +22,8 @@ function Home() {
     <>
       <div>
         <section className="section-initial">
-          <img src={ImageHeader} alt="Image of header" />
+          <img src={ImageHeaderMobile} alt="Image of header" />
+          <img src={ImageHeaderDesktop} alt="Image of header" />
           <img src={Logo} alt="Image of Logo" />
           <div className="section-initial__container">
             <h1>A history of everything you copy</h1>
@@ -29,44 +31,50 @@ function Home() {
               Clipboard allows you to track and organize everything you copy.
               Instantly access your clipboard on all your devices.
             </span>
-            <Button
-              text="Download for IOS"
-              backgroundColor="#31b9a4"
-              boxshadow="4px 4px 5px rgb(41, 147, 128)"
-            />
-            <Button
-              text="Download for Mac"
-              backgroundColor="#5F78FA"
-              boxshadow="4px 4px 5px rgb(87, 102, 179)"
-            />
+            <div className="section-initial__container-buttoms">
+              <Button
+                text="Download for IOS"
+                backgroundColor="#31b9a4"
+                boxshadow="4px 4px 5px rgb(41, 147, 128)"
+              />
+              <Button
+                text="Download for Mac"
+                backgroundColor="#5F78FA"
+                boxshadow="4px 4px 5px rgb(87, 102, 179)"
+              />
+            </div>
           </div>
         </section>
-        <section className="info">
+        <section className="info info--search">
           <h1>Keep track of your snippets</h1>
           <span>
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
           </span>
-          <img
-            className="info__img"
-            src={ImageComputer}
-            alt="Image of a computer"
-          />
-          <h1>Quick Search</h1>
-          <span>
-            Easily search your snippets by content, category, web address,
-            application, and more.
-          </span>
-          <h1>iCloud Sync</h1>
-          <span>
-            Instantly saves and syncs snippets across all your devices.
-          </span>
-          <h1>Complete History</h1>
-          <span>
-            Retrieve any snippets from the first moment you started using the
-            app.
-          </span>
+          <div className="info__search">
+            <img
+              className="info__img"
+              src={ImageComputer}
+              alt="Image of a computer"
+            />
+            <div className="info__list">
+              <h1>Quick Search</h1>
+              <span>
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </span>
+              <h1>iCloud Sync</h1>
+              <span>
+                Instantly saves and syncs snippets across all your devices.
+              </span>
+              <h1>Complete History</h1>
+              <span>
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </span>
+            </div>
+          </div>
         </section>
         <section className="info">
           <h1>Access Clipboard anywhere</h1>

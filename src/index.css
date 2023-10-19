@@ -4,6 +4,9 @@
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 18px;
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
