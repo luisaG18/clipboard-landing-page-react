@@ -1,24 +1,38 @@
 body {
   text-align: center;
+  h1 {
+    color: hsl(210, 10%, 33%);
+  }
+  span {
+    color: hsl(201, 11%, 66%);
+  }
 }
 
-.container-header {
+.section-initial {
   position: relative;
+  height: 600px;
   img:first-child {
     width: 100%;
   }
-  img:last-child {
+  img:nth-child(2) {
     position: absolute;
     right: 50%;
     bottom: 50%;
-    transform: translate(50%, 50%);
+    transform: translate(50%, -50%);
+  }
+  &__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 45%;
+    padding: 0 40px 40px 40px;
   }
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  padding: 40px 40px 0 40px;
+  padding: 110px 40px 0 40px;
   &__img {
     padding: 50px 0;
   }
@@ -39,6 +53,9 @@ body {
   padding: 40px 0;
   background-color: #f5f6f8;
   margin: 60px 0 0 0;
+  span {
+    color: hsl(210, 10%, 33%);
+  }
   &__logo {
     width: 80px;
     margin: 0 auto;

@@ -20,26 +20,26 @@ function Home() {
   return (
     <>
       <div>
-        <header className="container-header">
+        <section className="section-initial">
           <img src={ImageHeader} alt="Image of header" />
           <img src={Logo} alt="Image of Logo" />
-        </header>
-        <section className="info">
-          <h1>A history of everything you copy</h1>
-          <span>
-            Clipboard allows you to track and organize everything you copy.
-            Instantly access your clipboard on all your devices.
-          </span>
-          <Button
-            text="Download for IOS"
-            backgroundColor="#31b9a4"
-            boxshadow="4px 4px 5px rgb(41, 147, 128)"
-          />
-          <Button
-            text="Download for Mac"
-            backgroundColor="#5F78FA"
-            boxshadow="4px 4px 5px rgb(87, 102, 179)"
-          />
+          <div className="section-initial__container">
+            <h1>A history of everything you copy</h1>
+            <span>
+              Clipboard allows you to track and organize everything you copy.
+              Instantly access your clipboard on all your devices.
+            </span>
+            <Button
+              text="Download for IOS"
+              backgroundColor="#31b9a4"
+              boxshadow="4px 4px 5px rgb(41, 147, 128)"
+            />
+            <Button
+              text="Download for Mac"
+              backgroundColor="#5F78FA"
+              boxshadow="4px 4px 5px rgb(87, 102, 179)"
+            />
+          </div>
         </section>
         <section className="info">
           <h1>Keep track of your snippets</h1>
@@ -53,21 +53,15 @@ function Home() {
             src={ImageComputer}
             alt="Image of a computer"
           />
-        </section>
-        <section className="info">
           <h1>Quick Search</h1>
           <span>
             Easily search your snippets by content, category, web address,
             application, and more.
           </span>
-        </section>
-        <section className="info">
           <h1>iCloud Sync</h1>
           <span>
             Instantly saves and syncs snippets across all your devices.
           </span>
-        </section>
-        <section className="info">
           <h1>Complete History</h1>
           <span>
             Retrieve any snippets from the first moment you started using the
@@ -85,12 +79,8 @@ function Home() {
             src={ImageDevices}
             alt="Image of a devices"
           />
-        </section>
-        <section className="info">
           <h1>Supercharge your workflow</h1>
           <span>We’ve got the tools to boost your productivity.</span>
-        </section>
-        <section className="info">
           <img
             className="info__icon"
             src={IconBlacklist}
@@ -101,15 +91,11 @@ function Home() {
             Ensure sensitive information never makes its way to your clipboard
             by excluding certain sources.
           </span>
-        </section>
-        <section className="info">
           <img className="info__icon" src={IconText} alt="Icon of a text" />
           <h1>Plain text snippets</h1>
           <span>
             Remove unwanted formatting from copied text for a consistent look.
           </span>
-        </section>
-        <section className="info">
           <img
             className="info__icon"
             src={IconPreview}
