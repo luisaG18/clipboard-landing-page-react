@@ -89,32 +89,41 @@ function Home() {
           />
           <h1>Supercharge your workflow</h1>
           <span>We’ve got the tools to boost your productivity.</span>
-          <img
-            className="info__icon"
-            src={IconBlacklist}
-            alt="Icon of a blacklist"
-          />
-          <h1>Create blacklists</h1>
-          <span>
-            Ensure sensitive information never makes its way to your clipboard
-            by excluding certain sources.
-          </span>
-          <img className="info__icon" src={IconText} alt="Icon of a text" />
-          <h1>Plain text snippets</h1>
-          <span>
-            Remove unwanted formatting from copied text for a consistent look.
-          </span>
-          <img
-            className="info__icon"
-            src={IconPreview}
-            alt="Icon of a preview"
-          />
-          <h1>Sneak preview</h1>
-          <span>
-            Quick preview of all snippets on your Clipboard for easy access.
-          </span>
+          <div className="icons">
+            <div className="icons__i">
+              <img
+                className="info__icon"
+                src={IconBlacklist}
+                alt="Icon of a blacklist"
+              />
+              <h1>Create blacklists</h1>
+              <span>
+                Ensure sensitive information never makes its way to your
+                clipboard by excluding certain sources.
+              </span>
+            </div>
+            <div className="icons__i">
+              <img className="info__icon" src={IconText} alt="Icon of a text" />
+              <h1>Plain text snippets</h1>
+              <span>
+                Remove unwanted formatting from copied text for a consistent
+                look.
+              </span>
+            </div>
+            <div className="icons__i">
+              <img
+                className="info__icon"
+                src={IconPreview}
+                alt="Icon of a preview"
+              />
+              <h1>Sneak preview</h1>
+              <span>
+                Quick preview of all snippets on your Clipboard for easy access.
+              </span>
+            </div>
+          </div>
         </section>
-        <section className="info">
+        <section className="info info__images">
           <img
             className="info__imgLogo"
             src={LogoGoogle}
@@ -139,24 +148,32 @@ function Home() {
             Available for free on the App Store. Download for Mac or iOS, sync
             with iCloud and you’re ready to start adding to your clipboard.
           </span>
-          <Button
-            text="Download for IOS"
-            backgroundColor="#31b9a4"
-            boxshadow="4px 4px 5px rgb(41, 147, 128)"
-          />
-          <Button
-            text="Download for Mac"
-            backgroundColor="#5F78FA"
-            boxshadow="4px 4px 5px rgb(87, 102, 179)"
-          />
+          <div className="section-initial__container-buttoms">
+            <Button
+              text="Download for IOS"
+              backgroundColor="#31b9a4"
+              boxshadow="4px 4px 5px rgb(41, 147, 128)"
+            />
+            <Button
+              text="Download for Mac"
+              backgroundColor="#5F78FA"
+              boxshadow="4px 4px 5px rgb(87, 102, 179)"
+            />
+          </div>
         </section>
         <footer className="footer">
           <img className="footer__logo" src={Logo} alt="Icon of Logo" />
-          <span>FAQs</span>
-          <span>Contact Us</span>
-          <span>Privacy Policy</span>
-          <span>Press Kit</span>
-          <span>Install Guide</span>
+          <div className="footer__span">
+            <div className="footer__span--i">
+              <span>FAQs</span>
+              <span>Contact Us</span>
+            </div>
+            <div className="footer__span--i">
+              <span>Privacy Policy</span>
+              <span>Press Kit</span>
+            </div>
+            <span>Install Guide</span>
+          </div>
           <div className="footer__icons">
             <img src={IconFacebook} alt="Icon of Facebook" />
             <img src={IconTwitter} alt="Icon of Twitter" />
